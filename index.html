@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    .hero{
+        
+        background: #eff4fd;
+        position: relative;
+        border-radius: 20px;
+    }
+    
+    nav{
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 70px;
+        cursor: pointer;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover{
+        color: red;
+    }
+    
+    .detel{
+        margin-left: 8%;
+        margin-top: 15%;
+    }
+    
+    .detel h1{
+        font-size: 50px;
+        color: #212121;
+        margin-bottom: 20px;
+    }
+    
+    span{
+        color: orange;
+        
+    }
+    
+    .detel p{
+        color: #555;
+        line-height: 22px;
+    }
+    
+    .detel a{
+        background: #212121;
+        padding: 10px 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 5px;
+    }
+    
+    .images{
+        margin: 30px;
+        width: 40%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+    
+    .images img{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+    .boy{
+        border-radius: 40%;
+    }
+    .images:hover .shape{
+        bottom: 40px;
+    }
+    
+    .images:hover .boy{
+        left: 45%;
+    }
+    .code{
+        padding: 20px;
+    }
+    
+    .social{
+        margin-left: 8%;
+        margin-top: 100px;
+    }
+    
+    .social a{
+        font-size: 30px;
+        color: #212121;
+        margin-right: 20px;
+    }
+    
+    .social a:hover{
+        color: orange;
+    }
+    .ftr{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: rgb(197, 245, 245);
+    }
+    .img{
+        text-align: center;
+        word-spacing: 10px;
+       }
+       #copyr{
+        text-align: center;
+        font-size: small;
+       }
+       #tc{
+        text-align: center;
+        text-decoration: solid;
+        color: rgb(0, 106, 255);
+       }
+       #design{
+        text-align: center;
+       }
+       #dev{
+        text-decoration: solid;
+        color: red;
+       }
+       
+       @media only screen and (min-width:800px){
+        nav{
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .code{
+            display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+       
+         }
+       }
+    @media only screen and (max-width:500px) {
+    nav{
+      
+    }
+    .hero{
+        margin: 10px;
+        position: relative;
+        font-size: small;
+        background: #d3dff4;
+        position: relative;
+    }
+    .nav1{
+        padding: 10px;
+
+        font-family: 'Courier New', Courier, monospace;
+         position: relative;
+           font-size: small;
+           border-radius: 10px;
+           text-align: center;
+           text-decoration: none;
+    }
+
+    .images{
+        margin: 20px;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+
+    }
+    .images img{
+        height: 80%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+     .images:hover .shape{
+        bottom: 40px;
+    }
+    
+    .images:hover .boy{
+        left: 45%;
+    }
+    .code{
+        overflow-wrap: break-word
+    }
+    #cd{
+        margin-left: ;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav class="nav1">
+            <img src="/logo/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">EXPERINCE</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">HIRE ME</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>I,M DEV KUMAR <span>GHOSH</span></h1>
+            <p>This is my official Portfolio website to showcase my 
+                all works related to <br> web development and ui design. </p>
+            <a href="#">Downdload CV</a>
+        </div>
+        <div class="images">
+            <img src="/logo/shape.png" class="shape" >
+            <img src="/logo/profile.png" class="boy">
+        </div>
+
+        <div class="code">
+        
+                <ul id="cd"><img src="/logo/htmlm.png" alt="html" width="50px"></ul>
+                <ul id="cd"><img src="/logo/css.png" alt="css" width="50px"></ul>
+                <ul id="cd"><img src="/logo/js.png" alt="javascript" width="60px"> </ul>
+                <ul id="cd"><img src="/logo/bt.png" alt="bootstrap" width="50px"> </ul>
+                <ul id="cd"><img src="/logo/nood js.png" alt="nood.js" width="150px"> </ul>
+                <ul id="cd"><img src="/logo/php.png" alt="php" width="50px"> </ul>
+                
+            
+        </div>
+
+      
+
+    </div>
+
+
+    <div>
+         
+    </div>
+
+
+    <div >
+        <footer class="ftr">
+            <div class="img">
+               <a href="https://linkedin.com/in/dev-kumar-ghosh-127758259"  target="_blank"> <img src="/logo/in.png" alt="linkdin" width="35px"></a>
+                <a href="https://github.com/devghosh51"  target="_blank"><img src="/logo/github logo.png" alt="github" width="38px"></a>
+                <a href="https://www.youtube.com/channel/UCW_40TV-silHWBW5dVprtkw" target="_blank"><img src="/logo/yt.png" alt="youtube" width="35px"></a>
+                
+            </div>
+           
+        <div style="text-align: center;">
+            <a id="copyr"> Copyright &copy; 2023 WebDev. All rights reserved.
+                Made with ❤️ by Dev Kumar Ghosh</a>
+        </div>
+        <div id="tc">
+            <a  id="tc" href="terms & conditions.html" target="_blank">Terms & Conditions</a>
+        </div>
+        <div id="design">
+           <p > Design by <a id="dev" href="#">Dev</a></p>
+        </div>
+
+        </footer>
+    </div>
+</body>
+</html>
